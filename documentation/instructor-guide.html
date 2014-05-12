@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  
+    WPLMS Instructor Guide | LMS for WordPress
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+<!-- Documentation extras -->
+<link href="css/style.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+  </head>
+  <body class="bs-docs-home">
+  
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">WPLMS</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="quick-installation-guide.html">Quick Installation Guide</a>
+        </li>
+        <li>
+          <a href="theme-guide.html">Theme Guide</a>
+        </li>
+        <li>
+          <a href="student-guide.html">Student Guide</a>
+        </li>
+        <li>
+          <a href="instructor-guide.html">Instructor Guide</a>
+        </li>
+        <li>
+          <a href="tips.html">Tips</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/"><i class="glyphicon glyphicon-plus"></i> Support</a></li>
+        <li><a href="http://themeforest.com/user/vibethemes"><i class="glyphicon glyphicon-heart-empty"></i> Purchase</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Instructor Guide</h1>
+        <p>Create Courses, Create Quizes, Sell Courses, Manage Students, Evaluate Results. </p>
+        
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <!-- Global Bootstrap settings
+================================================== -->
+<p class="lead">Instructor in WPLMS has a lot of controls and access rights. Below flowchart depicts the various functions of the Instructor.</p>
+<br />
+  <img src="images/tf-ins.png" alt="student guide" style="padding:60px;width:90%;"/>
+<div class="bs-docs-section">
+  <h1 id="role" class="page-header">Role</h1>
+    <p class="lead">An Instructor is a user who creates the courses, manages the courses and students.</p>
+    <h3 id="instructor">Instructor</h3>
+    <p> An Instructor by default gets access to a lot of features in the sites. Like viewing all Questions in the question bank, viewing all units in the directory through the admin panel.</p>
+    <p>Instrctor however can not edit or delete the contents from Units created by other Instructors.</p>
+    <p>An Instructor can not manually assign badges and certificates to students who are not taking the course.</p>
+
+    <h3 id="group-admin">Group Admin</h3>
+    <p>An instructor is also the Group Admin of the groups connected to Courses published by him. An Instructor therefore can Add or Remove any student from the Group. An Instructor can also assign some students as Group Moderators for efficient functioning of the group.</p>
+    <h3 id="forum-admin">Forum Admin</h3>
+    <p>Just like the groups, an Instructor is the Forum administrator for the Forum Connected to the Course.</p>
+    <p>An Instructor can delete any sub-forum, topic in the Course forum.</p>
+    <p>An Instructor can ban any user in her forum.</p>
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="createcourse" class="page-header">Creating Courses</h1>
+  <p class="lead">Only an Instructor or Administrator can create Courses in WPLMS</p>
+  <h3 id="create-unit">Creating Units</h3>
+<p>Units are the most basic elements in a course. Follow the steps to create a new unit.</p>
+<hr>
+<h4 id="new">Adding a New Unit</h3>
+<ol>
+<li>Login to<em> Admin</em> Panel</li>
+<li>Go to <em>LMS</em> section and click on All Units.</li>
+<li>Now click on <em>Add New</em></li>
+<li>Now fill in the details like Unit Name in the heading of the post, and the unit content in the editor area. The editor area is same as that for posts, pages and supports WordPress native audio and videos [Learn more+].</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-unit1.png?resize=969%2C596" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-unit1.png?w=1170" alt="wplms-unit1" width="60" height="37"></a></div>
+</div>
+<hr>
+<h4 id="unit">&nbsp;Unit Settings</h3>
+<ol>
+<li><strong>Unit Description</strong>: Enter a small gist/description of the unit here. The description comes below the heading of the Unit.</li>
+<li><strong>Unit Type</strong>: Select unit type from General(Simple Text Unit) , Audio, Video or Podcast. Selecting the unit type comes handy in course curriculum where the unit icons are shown based on this selection i.e. in case of a video unit, a video icon will be shown along with the unit name in the course curriculum.</li>
+<li><strong>Free Unit</strong>: Select Free Unit <em>Show</em> or <em>Hide. Show</em> option makes the Unit as free and allow users to see the unit for non logged in users before purchasing the course.</li>
+<li><strong>Unit Duration:</strong> Enter the estimate&nbsp; of the duration of the course in Minutes.</li>
+<li><strong>Unit Forum</strong>: BbPress Forum can be connected to an individual unit from here. Select the Unit forum or Course Forum or any other forum instructor wish to connect with this Unit. Forums are useful for instructor and students interaction, clearing the doubts and creating a social connection within the group opting the course.</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-unit2.png?resize=976%2C541" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-unit2.png?w=1170" alt="wplms-unit2" width="60" height="33"></a></div>
+</div>
+<hr>
+<h4 id="attachments">Unit Attachments</h3>
+<p>Unit Attachments are downloadable data attached to a unit which the students can download. These attachments are shown at the bottom of the unit. An attachment could be a video, audio, pdf, doc or a zip file. Follow below steps to add attachments to a unit.</p>
+<ol>
+<li>Click on Add Media button in the Unit.</li>
+<li>Upload the Attachment files. <a href="http://codex.wordpress.org/Getting_Started#How_do_I_insert_an_image.2C_video.2C_audio_clip_or_other_file_such_as_a_PDF.3F" target="_blank">Learn more</a></li>
+<li>Unit will now automatically detect the attached files and show them below the unit content.</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-unit3.png?resize=796%2C577" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-unit3.png?w=1170" alt="wplms-unit3" width="60" height="43"></a></div>
+</div>
+<hr>
+<h4 id="finishing">Finishing Unit</h3>
+<ol>
+<li>Add the unit tags.</li>
+<li>You can save the unit as draft for future releases or Publish it.</li>
+</ol>
+
+
+  <h3 id="create-question">Creating Questions</h3>
+
+ 
+<p>Question is the most basic elements in a Quiz. Follow the steps to create a new question.</p>
+<hr>
+<h4 id="add">Adding a New Question</h3>
+<ol>
+<li>Login to<em> Admin</em> Panel</li>
+<li>Go to <em>LMS</em> section and click on <em>All Questions</em>.</li>
+<li>Now click on <em>Add New </em>button.<em><br>
+</em></li>
+<li>Now fill in the reference name of the question like “Maths Quiz1 Question1″ etc, naming your question helps in putting up questions together while making a quiz. After naming, enter the question in the editor area.</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-question1.png?resize=1268%2C338" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-question1.png?w=1170" alt="wplms-question1" width="60" height="16"></a><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-question2.png?resize=976%2C594" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-question2.png?w=1170" alt="wplms-question2" width="60" height="37"></a></div>
+</div>
+<hr>
+<h4 id="settings">Question Settings</h3>
+<ol>
+<li><strong>Question Type</strong>: Select question type here. You can select from Single Choice (Select one from options), Multiple Choice(There can be multiple answers), Small Text(One Word or Sentence), Large Text(Essay Type Questions).</li>
+<li><strong>Question Options</strong> : Enter option by clicking on <em>Add More</em>. You can arrange the order of the options by dragging the small arrow button(in blue) on left hand side of the option number.</li>
+<li><strong>Correct Answer</strong>: For Single/ Multiple choice, enter the correct answer choice number and separated by comma in case of multiple answers. In case of Small Text, enter the full complete answer in the space given. This would help the instructor to evaluate quiz after it is completed and submitted by the student.</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-question3.png?resize=963%2C472" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-question3.png?w=1170" alt="wplms-question3" width="60" height="29"></a></div>
+</div>
+<hr>
+<h3 id="finish">Finishing Question</h3>
+<ol>
+<li>Add tags to the question</li>
+<li>Publish</li>
+</ol>
+
+  <h3 id="create-quiz">Creating Quizes</h3>
+
+<p>Quiz is made up of questions. Instructor can place quiz anywhere inside the course, be it after each unit or after the completion of all the units or both. Follow the steps to create a new quiz.</p>
+<hr>
+<h3 id="new">Adding a New Quiz</h3>
+<ol>
+<li>Login to<em> Admin</em> Panel</li>
+<li>Go to <em>LMS</em> section and click on All Quizzes.</li>
+<li>Now click on <em>Add New</em></li>
+<li>Now fill in the details like Quiz Name in the heading of the post, and the instructions or any other information like type and questions you want to tell users before they head for the quiz in the editor area. The editor area is same as that for posts, pages and supports WordPress native audio and videos [Learn more+].</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz1.png?resize=821%2C397" title="Add New Quiz"><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz1.png?w=1170" alt="wplms-quiz1" width="60" height="29"></a></div>
+</div>
+<hr>
+<h4 id="setting">Question Settings</h3>
+<ol>
+<li><strong>Quiz Subtitle</strong>: Enter a subtitle of the quiz here. The description comes below the Quiz name.</li>
+<li><strong>Quiz Duration</strong>: Select the total duration of the quiz in minutes. The time will set accordingly in the timer.</li>
+<li><strong>Send notification upon evaluation</strong>: Once the quiz has been evaluated by the instructor, if set show it will automatically send message to the students that the quiz has been evaluated and the results are available.</li>
+<li><strong>Post Quiz Message:</strong> The message box appears after the quiz has been completed by the students.</li>
+<li><strong>Quiz questions</strong>: Add the quiz questions here. The question here appears from the All questions that has been created by the instructor. Since the question database is common so the column shows all the questions created by all the instructors. So, it is very important to give a meaningful and identifiable question name while creating a question.</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz2.png?resize=967%2C476" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz2.png?w=1170" alt="wplms-quiz2" width="60" height="30"></a><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz3.png?resize=963%2C560" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz3.png?w=1170" alt="wplms-quiz3" width="60" height="35"></a><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz4.png?resize=967%2C581" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-quiz4.png?w=1170" alt="wplms-quiz4" width="60" height="36"></a></div>
+</div>
+<p>&nbsp;</p>
+<hr>
+
+
+  <h2 id="create-course">Create Courses</h3>
+  
+<p>A course is&nbsp; said to be complete after units, quizzes are added to it.Follow the steps to create a course.</p>
+<hr>
+<h4 id="new">Adding a New Course</h3>
+<ol>
+<li>Login to<em> Admin</em> Panel</li>
+<li>Go to <em>LMS</em> section and click on All Courses.</li>
+<li>Now click on <em>Add New</em></li>
+<li>Now fill in the details like Course Name in the heading of the post, and a small description of the what the course is all about in the editor area. The editor area is same as that for posts, pages and supports WordPress native audio and videos [Learn more+].</li>
+</ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course1.png?resize=946%2C469" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course1.png?w=1170" alt="wplms-course1" width="60" height="30"></a></div>
+</div>
+
+<hr>
+<h4 id="setting">Course Settings</h3>
+<ol>
+<li><strong>Sidebar</strong>: Select the sidebar you want to place in the course page. Sidebars are created in the section Appearance-&gt;Widgets by the administrator.</li>
+<li><strong>Excellence Badge</strong>: The badges are given on completion of the course and after achieving a certain percentage in the quiz i.e. the Badge Percentage which can be adjusted in the next setting. It is not necessary that every course taker will get the badge.</li>
+<li><strong>Badge Percentage</strong>: This is the minimum percentage required by the students to have a badge for the course.</li>
+<li><strong>Badge Title:</strong> You can set the title for the badge given after completion of the course like for a Maths course, you can set the title as Maths Champion which a student will get only after receiving the Badge Percentage .</li>
+<li><strong>Completion Certificate</strong>:&nbsp; If set Show, after the course is completed each student who passes the course will get this certificate of completion which is printable as well as downloadable. You can design the certificate according to your requirements.Follow the tutorial in the relevant section.Even after the course has expired the student can log in and view/print/download her certificate of completion.</li>
+<li><strong>Passing Percentage:</strong> The minimum percentage required to pass the course.</li>
+<li><strong>Total Duration of Course:</strong> Total duration of the course is the total time for which the student can access the course by logging into the site. After the duration has expired, the user will not be able to view the course content.</li>
+<li><strong>Total Number of Students in Course</strong>: Initially while creating the course the number of students is set to 0.</li>
+<li><strong>Course Curriculum:</strong> This setting help the instructor to create the curriculum of the course by arranging the units, quiz and categorizing it in sections. Add Section enables the instructor to add a section and name it. Add Unit enables the instructor to add units which has been created earlier. The units can further be arranged under different by dragging and dropping. Add Quiz allows the instructor to add quiz after unit , section or anywhere the instructor wish to place the quiz. All the three i.e Section, Unit, Quiz are draggable and can be arranged likewise.</li>
+<li><strong>Pre required course:</strong> This is the pre requisite of doing the course i.e. if some course is selected , then that course must be finished before taking this new course.</li>
+<li><strong>Course Forum</strong>: Link here the course with the respective course forum.</li>
+<li><strong>Course Group:</strong> Link here the course with the respective course group.</li>
+<li><strong>Course Completion Message</strong>: This message would be shown after the completion of the course.</li>
+</ol>
+<div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course3.png?resize=960%2C658" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course3.png?w=1170" alt="wplms-course3" width="60" height="41"></a><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course4.png?resize=961%2C644" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course4.png?w=1170" alt="wplms-course4" width="60" height="40"></a><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course5.png?resize=979%2C579" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course5.png?w=1170" alt="wplms-course5" width="60" height="35"></a></div>
+</div>
+<hr>
+<p>&nbsp;</p>
+<h4 id="Other">Other Settings</h3>
+<p><strong>Course Product:</strong> After the course has been created here. The course product is made so that the course created is sold as a product in the shop. After the course product is created, we link both course as well as product with each other with the help of this setting.</p>
+<p><strong>Excerpt:</strong> Add small two line description of the course. This appears below the name of the course.</p>
+<div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course6.png?resize=969%2C595" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course6.png?w=1170" alt="wplms-course6" width="60" height="37"></a></div>
+</div>
+<hr>
+<h4 id="finishing">Finishing Course</h3>
+<ol>
+<li>Add featured image to the course in the right hand side of this page. This image is the main image of your course which appears in the course directory, home page etc.</li>
+<li>Add categories to the course.</li>
+<li>Publish the course.</li>
+</ol>
+<div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+<p><strong>Screenshots Walkthrough</strong></p>
+<div class="gallery normal"><a href="http://i0.wp.com/www.vibethemes.com/img/wplms-course7.png?resize=292%2C507" title=""><img src="http://i0.wp.com/www.vibethemes.com/img/wplms-course7.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+</div>
+<hr />
+ <h4 id="creating-free-courses">Creating Free Courses</h3>    
+  <p>A free course is accessible by all the students </p>
+  <p>To create a free course or make a course free, the instructor simply needs to switch the Free button "on"</p>
+  <p>Watch this video tutorial for reference:</p>
+
+<a href="http://quick.as/pmaqcd9m">Watch this on Quickcast</a>
+<div class="fitvids">
+    <iframe name='quickcast' src='http://quick.as/embed/pmaqcd9m' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.60'></script>
+</div>
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="manage" class="page-header">Manage Course</h1>
+
+  <p class="lead">After creating courses Instructor manages the courses. There are various function available to manage courses in the Theme. A course is Managed from the Admin section in Course page.</p>
+    <h3 id="evaluate-quiz">Evaluating Quizes</h3>
+    <p>After the Student has submitted the quiz.</p>
+    <p>The Quiz submissions can be loacted in the Course Admin -> Submissions -> Quiz Submissions section.</p>
+    <p>If for any reason the Instructor needs to reset the quiz for the user then she can click the Reset Quiz for User option</p>.
+    <p>To Evaluate the quiz, Instructor clicks on Evaluate icon and the Evaluation screen opens</p>
+    <p>Evaluation screen shows, Question , marked answer, correct answer , maximum marks for the question and a textbox for marks and give marks button.</p>
+    <p>To give marks to each question Instructor enters marks in the textbox and clicks save marks.</p>
+    <p>Once Instructor has saved marks for all the questions, Instructor can click on Mark quiz as evaluated</p>
+    <p>As soon as this button is pressed the user gets a notification and message with the Quiz Results.</p>
+    <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/course-admin-submission1.png?resize=292%2C507" title="Quiz, Course Submissions"><img src="images/course-admin-submission1.png?w=1170" alt="wplms-course7" width="60" height="104"></a><a href="images/course-admin-submission2.png?resize=292%2C507" title="Quiz Evaluate"><img src="images/course-admin-submission2.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+    </div>
+    <h3 id="evaluate-course">Evaluating Courses</h3>
+    <p>After the Student has submitted the Course.</p>
+    <p>The Course submissions can be loacted in the Course Admin -> Submissions -> Course Submissions section.</p>
+    <p>If for any reason the Instructor needs to reset the course for the user then she can click the Reset Course for User option</p>.
+    <p>To Evaluate the course, Instructor clicks on Evaluate icon and the Evaluation screen opens</p>
+    <p>Evaluation screen shows, the all the units in the course, and their completion status, it also shows the marks obtained in the Quizes in the course.</p>
+    <p>To give marks to Instructor enters marks from 100 in the marks column and marks Course as evaluated.</p>
+    <p>As soon as this button is pressed the user gets a notification and message with the Course Results.</p>
+    <p>If the Course percentage is above Badge percentage then the user recieves a Badge, if the Course percentage is above the passing percentage then the user recieves a completion certificate.</p>
+    <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/course-admin-submission1.png?resize=292%2C507" title="Quiz, Course Submissions"><img src="images/course-admin-submission1.png?w=1170" alt="wplms-course7" width="60" height="104"></a><a href="images/course-admin-submission3.png?resize=292%2C507" title="Course Evaluate"><img src="images/course-admin-submission3.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+    </div>
+    <h3 id="manage-students">Managing Students</h3>
+    <p>An Instructor can reset the full course for any student. The will have to start the course again from the very begining. This can be done form the Course -> Admin screen.</p>
+    <p>An Instructor can remove any student from the Course. The student will have to Pruchase the course again to take the course. This can be done form the Course -> Admin screen.</p>
+    <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/course-admin-members1.png?resize=292%2C507" title="Course Members"><img src="images/course-admin-members1.png?w=1170" alt="wplms-course7" width="60" height="104"></a><a href="images/course-admin-members2.png?resize=292%2C507" title="Managing Members"><img src="images/course-admin-members2.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+    </div>
+    <h3 id="course-message">Course Messaging</h3>
+
+    <p>An Instructor can send mass message to the students taking the course.This can be done form the Course -> Admin -> Members screen.</p>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="stats" class="page-header">Statistics</h1>
+    <p class="lead">Statistics play an important role in any LMS. WPLMS covers some of the important stats functions. We're however open to suggestions here. </p>
+    <h3 id="user-stats">User Statistics</h3>
+    <p>An Instructor can see any User's stats for her course only.</p>
+    <ol>
+      <li>To see user stats Instructor needs to go to Single Course -> Admin -> Students/Members</li>
+      <li>Click on the Graph Icons to see User Stats</li>
+      <li>After Clicking, if the user has finished the course, only the percentage obtained by the user is shown.</li>
+      <li>After Clicking, if the user is still taking the course then the course timeline is shown with the unit status and the marks obtained in the Quiz.</li>
+    </ol>
+    <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/course-admin-members1.png?resize=292%2C507" title="Course Members"><img src="images/course-admin-members2.png?w=1170" alt="wplms-course7" width="60" height="104"></a><a href="images/course-admin-members3.png?resize=292%2C507" title="Member Stats"><img src="images/course-admin-members3.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+    </div>
+    <h3 id="course-stats">Course Statistics</h3>
+    <p>An Instructor can see Course stats for her course only. 
+    Since calculating Statistics for the course is a complex process, statistics for the course needs to be manually activated by clicking the Calculate Stats icon at the bottom of the course stats screen.</p>
+    <ol>
+      <li>To see Courses stats Instructor needs to go to Single Course -> Admin -> Stats</li>
+      <li>If Stats for the course are not calculated or to recalculate the stats the Instructor can simply click on the Calculate Stats icon</li>
+      <li>The Course stats then appear on the Course Stats screen.</li>
+    </ol>
+    <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/course-admin-stats.png?resize=292%2C507" title="Course Stats"><img src="images/course-admin-stats.png?w=1170" alt="wplms-course7" width="60" height="104"></a></div>
+    </div>
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="interaction" class="page-header">Interaction</h1>
+      <p class="lead">BuddyPress provides a lot of functionality for interaction among students and instructors.</p>
+      <h3 id="groups">Groups</h3>
+      <p>Every Course taker is added to the course group. There are many useful plugins which can be installed to increase the usability of Groups in LMS. The plugin Group documents enables the Instructor to upload documents, like assignments for the Course group. This is automatically sent to the full course group.</p>
+      <h3 id="forums">Forums</h3>
+       <p>With the forum WPLMS get a lot of interaction features. A Private forum conencted to the Group can be made as the Course forum. This makes the Forum an exclusive club for the Course Members.</p> 
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="video" class="page-header">Video Tutorial</h1>
+    <p><a href="http://www.youtube.com/watch?v=OWz66G_XkNk">Watch on Youtube</a></p>
+  <div class="fitvids">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/OWz66G_XkNk" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+              <li>
+                <a href="#role">Role</a>
+                <ul class="nav">
+                  <li><a href="#instructor">Instructor</a></li>
+                  <li><a href="#group-admin">Group Admin</a></li>
+                  <li><a href="#forum-admin">Forum Admin</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#createcourse">Creating Course</a>
+                <ul class="nav">
+                  <li><a href="#create-unit">Creating Units</a></li>
+                  <li><a href="#create-question">Creating Questions</a></li>
+                  <li><a href="#create-quiz">Creating Quizes</a></li>
+                  <li><a href="#create-course">Create Courses</a></li>
+                   <li><a href="#creating-free-courses"> Free Courses</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#manage">Managing Course</a>
+                <ul class="nav">
+                  <li><a href="#evaluate-quiz">Evaluating Quizes</a></li>
+                  <li><a href="#evaluate-course">Evaluating Courses</a></li>
+                  <li><a href="#manage-students">Managing Students</a></li>
+                  <li><a href="#course-message">Course Messaging</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#stats">Statistics</a>
+                <ul class="nav">
+                  <li><a href="#user-stats">User Statistics</a></li>
+                  <li><a href="#course-stats">Course Statistics</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#interaction">Interaction</a>
+                <ul class="nav">
+                  <li><a href="#groups">Groups</a></li>
+                  <li><a href="#forums">Forums</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#video">Video Tutorial</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-social">
+  <ul class="bs-social-buttons">
+    
+    <li class="follow-btn">
+      <a href="https://twitter.com/vibethemes" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @vibethemes</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://vibethemes.com/envato/wplms" data-count="horizontal" data-via="vibethemes" data-related="mdo:WPLMS by VibeThemes">Tweet</a>
+    </li>
+  </ul>
+</div>
+
+
+   
+    <ul class="footer-links muted">
+      <li>Currently v 1.0</li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/">Support</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/7309-issue-log">Issue Log</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/7310-feature-requests">Feature Requests</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/tips-tricks-docs">Tips &amp; Tricks</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
+
+  </body>
+</html>

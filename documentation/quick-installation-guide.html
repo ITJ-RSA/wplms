@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  
+    WPLMS Quick Installation Guide | LMS for WordPress
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+<!-- Documentation extras -->
+<link href="css/style.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+  </head>
+  <body class="bs-docs-home">
+  
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">WPLMS</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="quick-installation-guide.html">Quick Installation Guide</a>
+        </li>
+        <li>
+          <a href="theme-guide.html">Theme Guide</a>
+        </li>
+        <li>
+          <a href="student-guide.html">Student Guide</a>
+        </li>
+        <li>
+          <a href="instructor-guide.html">Instructor Guide</a>
+        </li>
+        <li>
+          <a href="tips.html">Tips</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/"><i class="glyphicon glyphicon-plus"></i> Support</a></li>
+        <li><a href="http://themeforest.com/user/vibethemes"><i class="glyphicon glyphicon-heart-empty"></i> Purchase</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Quick Installation Guide</h1>
+        <p>Setup WPLMS on a fresh WordPress installation. You need a blank WordPress site with latest WordPress version and WPLMS theme. </p>
+        
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <!-- Global Bootstrap settings
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="pre-setup" class="page-header">Pre-Setup</h1>
+
+  <p class="lead">In this tutorial we'll setup WPLMS theme and some plugins to convert a WP site into a working LMS just like the demo.</p>
+
+  <h3 id="modifying-config">Modifying Config</h3>
+  <p>Since the theme comes packed with a lot of plugins, the size of the theme is larger than that of a normal WordPress theme. We suggest you to modify the <strong>wp-config.php</strong> file in your WordPress setup for smoother upload process and later on functioning of the website.</p>
+  <h5>To modify the wp-config file in your WP setup follow below steps:</h5>
+  <ol>
+  <li>Locate the root WordPress directory in your server</li>
+  <li>Locate the file wp-config.php</li>
+  <li>Add below code after the line <i>define('DB_COLLATE', '');</i> in the file and save.</li>
+  </ol>
+
+  
+<div class="highlight"><pre><code class="html">
+<span class="nt">define( 'WP_MEMORY_LIMIT', '128M' );</span> 
+</code></pre></div>
+
+<strong>Server 500 Error : See the Video tutorial for this in the <a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/tips-tricks-docs/7313-wplms-faqs">Faq section</a>.</strong>
+To learn more on this refer to this post in WordPress.org : <a href="http://codex.wordpress.org/Editing_wp-config.php">http://codex.wordpress.org/Editing_wp-config.php</a>
+<p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Note: You will require FTP/Cpanel detials of your server to edit the file.</p>
+
+  <h3 id="preparing">Preparing Files</h3>
+  <p>When you download WPLMS from Themeforest, you get the full WPLMS package. This is the full package, which includes sample data zip file and this documentation. </p>
+  <p>Uploading the full package will give you an <strong>error of no stylesheet found</strong></p>
+  <h5>You need to first unzip the package and locate the file <strong>WPLMS.zip</strong> and use only this file to upload in WordPress Appearance themes section.</h5>
+
+<p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Note: If you're still unable to Install the theme, refer to the alternate way in the Video Tutorials.</p>
+
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Note: Only upload the WPLMS.zip file in WordPress Themes.</p>
+
+
+</div>
+
+
+
+<!-- Grid system
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="upload" class="page-header">Uploading &amp; Activating</h1>
+
+  <p class="lead">Once your WordPress setup is ready and you have the right file for upload, you simply have to upload the theme in Appearance Themes section.</p>
+
+  <h3 id="upload-theme">Uploading the Theme</h3>
+  <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+  <ol>
+    <li>Download WPLMS theme from your Themeforest account. [Learn more+]</li>
+    <li>Login to Admin panel in your WordPress site.</li>
+    <li>Go to&nbsp;<em>Appearance</em>&nbsp;section in the WordPress Admin panel.</li>
+    <li>Go to&nbsp;<em>Themes</em>&nbsp;section in&nbsp;<em>Appearance</em>.</li>
+    <li>Click on&nbsp;<em>Add New</em>&nbsp;button.</li>
+    <li>Click on the link&nbsp;<em>upload</em>.</li>
+    <li>Click the button&nbsp;<em>Choose file</em>&nbsp;and select the&nbsp;<strong>wplms.zip</strong>&nbsp;downloaded from Themeforest.</li>
+    <li>Click on Install Now.</li>
+  </ol>
+  
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-up1.png" title="Locating Appearance -&gt; Themes in WP admin"><img src="images/wplms-up1.png" alt="wplms-up1" width="60" height="36"></a>
+    <a href="images/wplms-up2.png?resize=1010%2C673" title="Click Add New"><img src="images/wplms-up2.png?w=1170" alt="wplms-up2" width="60" height="40"></a>
+    <a href="images/wplmsup3.png?resize=1067%2C674" title="Click Upload"><img src="images/wplmsup3.png?w=1170" alt="wplmsup3" width="60" height="38"></a>
+    <a href="images/wplms-up4.png?resize=1050%2C669" title="Select downloaded wplms.zip file"><img src="images/wplms-up4.png?w=1170" alt="wplms-up4" width="60" height="38"></a>
+    <a href="images/wplms-up5.png?resize=867%2C624" title="Click Upload"><img src="images/wplms-up5.png?w=1170" alt="wplms-up5" width="60" height="43"></a></div>
+  </div>
+
+  <h3 id="activate-theme">Activating theme</h3>
+  <ol>
+  <li>After the theme has been successfully uploaded in WordPress, click on Activate link to activate the theme.</li>
+  <li>After activating the theme, if you open your WordPress site. You would see several messages, which we’ll cover in later sections.</li>
+  </ol>
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-up5.png?resize=867%2C624" title="Click Upload"><img src="images/wplms-up5.png?w=1170" alt="wplms-up5" width="60" height="43"></a><a href="images/wplms-up6.png?resize=914%2C620" title="After Activation"><img src="images/wplms-up6.png?w=1170" alt="wplms-up6" width="60" height="41"></a></div>
+  </div>
+
+  <h3 id="installing-plugins">Installing Plugins</h3>
+  <p>After the theme is installed and activated, you'll get notification to install plugins. Some of these plugins are required and some are recommended. Here is a list of plugins and their functions :</p>
+  <ol>
+    <li><strong>BuddyPress</strong> : The main plugin required for theme to function as LMS.</li>
+    <li><strong>BBPress</strong> : Recommended plugin to enhance LMS experience.</li>
+    <li><strong>WooCommerce</strong> : The Required plugin if you want to sell courses in LMS.</li>
+    <li><strong>Vibe Course Module</strong> : The main plugin required for LMS to connect with BuddyPress. Contains all the necessary features of LMS.</li>
+    <li><strong>Vibe Custom Types</strong> : This is a Required plugin which is the backbone of LMS.</li>
+    <li><strong>Vibe Shortcodes</strong> : The Optional plugin is recommended if you want to use inbuilt shortcodes LMS.</li>
+    <li><strong>Layerslider</strong> : The Optional plugin is recommended to build beautiful sliders. If you do not want any slider in your theme, then you need not install this plugin</li>
+  </ol>
+  <p>There are other plugins which can be used to enhace the experience and useful for mainenance of system:</p>
+  <ol>
+    <li><strong>BuddyPress security check</strong> : MAths Security Check placed at the bottom of registeration to keep a check on spam.</li>
+    <li><strong>BuddyPress Group documents</strong> : Useful for sharing documents in group.</li>
+    <li><strong>WP FB Auto connect</strong> : Adds a Login by FB link in Login panel.</li>
+  </ol>
+  <p>Follow below steps to install and activate the plugins:</p>
+    <ol>
+  <li>After activating the theme, you’ll see a notification on the top of your WordPress admin panel, to install the necessary plugins. These plugins have been specifically designed for the theme to function as a LMS.</li>
+  <li>Click on&nbsp;<em>Begin Installing plugins link</em>&nbsp;in the notification.</li>
+  <li>You’ll get a list of plugins you need to install to get started with the theme. The list comprises of following plugins :&nbsp;<em>BuddyPress, WooCommerce, Vibe Course Module, Vibe Shortcodes, Vibe Custom Types, LayerSlider.</em></li>
+  <li>Click on the Install Plugin link in front of each of the plugin.</li>
+  <li>The plugin with then install and activate automatically.</li>
+  <li>After the plugin has been installed and activated, click on go back to plugins install page.</li>
+  <li>Follow steps 4,5,6 to install all the plugins required for the theme. Once all the plugins have been installed the install plugins notification would no longer appear and you should see an LMS tab in your WP admin screen.</li>
+  </ol>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-installplugin1.png?resize=1033%2C676" title=""><img src="images/wplms-installplugin1.png?w=1170" alt="wplms-installplugin1" width="60" height="39"></a><a href="http://i2.wp.com/www.vibethemes.com/img/wplms-installplugin2.png?resize=1038%2C681" title=""><img src="http://i2.wp.com/www.vibethemes.com/img/wplms-installplugin2.png?w=1170" alt="wplms-installplugin2" width="60" height="39"></a></div>
+  </div>
+</div>  
+
+
+
+<!-- Typography
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="buddypress" class="page-header">BuddyPress Settings</h1>
+  <p>This section contains several important settings for BuddyPress. Some of these settings are required 
+  and some are recommended for WPLMS.</p>
+  <!-- Headings -->
+  <h2 id="buddypress-components">Components</h2>
+  <p>Buddypress comes with several inbuilt and useful components, such as Friends, Groups, Activity, Notifications etc. Each of which can be used effectively in an LMS. So we recommend enabling the following components in BuddyPress:<br />
+
+  <div class="bs-example bs-example-type">
+    <table class="table">
+      <tbody>
+        
+        <tr>
+          <td><h4>Extended Profiles</h4></td>
+          <td class="type-info"><code>[Required]</code> Enables you to add custom fields in user profiles. Customize your community with fully editable profile fields that allow your users to describe themselves.</td>
+        </tr>
+        <tr>
+          <td><h4>Account Settings</h4></td>
+          <td class="type-info"><code>[Required]</code> Allow your users to modify their account and notification settings directly from within their profiles.</td>
+        </tr>
+        <tr>
+          <td><h4>Friend Connections</h4></td>
+          <td class="type-info"><code>[Recommended]</code> Let your users make connections so they can track the activity of others and focus on the people they care about the most.</td>
+        </tr>
+        <tr>
+          <td><h4>Private Messaging</h4></td>
+          <td class="type-info"><code>[Recommended]</code> Allow your users to talk to each other directly and in private. Not just limited to one-on-one discussions, messages can be sent between any number of members.</td>
+        </tr>
+         <tr>
+          <td><h4>Activity Streams</h4></td>
+          <td class="type-info"><code>[Optional]</code> Global, personal, and group activity streams with threaded commenting, direct posting, favoriting, and @mentions, all with full RSS feed and email notification support.</td>
+        </tr>
+         <tr>
+          <td><h4>Notifications</h4></td>
+          <td class="type-info"><code>[Recommended]</code> Notify members of relevant activity with a toolbar bubble and/or via email, and allow them to customize their notification settings.</td>
+        </tr>
+         <tr>
+          <td><h4>User Groups</h4></td>
+          <td class="type-info"><code>[Recommended]</code> Groups allow your users to organize themselves into specific public, private or hidden sections with separate activity streams and member listings.</td>
+        </tr>
+        <tr>
+          <td><h4>Site Activity</h4></td>
+          <td class="type-info"><code>[Optional]</code> Record activity for new posts and comments from your site..</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <!-- Body copy -->
+  <h2 id="buddypress-pages">BuddyPress Pages</h2>
+  <p>BuddyPress required several important pages to function. These pages are connected to important inbuilt components in the BuddyPress.</p><p>The pages selected in this setting show sitewide information for the component. </p>
+  <div class="bs-example pages bs-example-type">
+    <table class="table">
+      <tbody>
+        
+        <tr>
+          <td><h4>Activity Page</h4></td>
+          <td class="type-info">The Activity Page shows all the site wide activity, which includes almost everything happening in the site like, messages, comment notifications, friend requests, group joining leaving etc.. If a user is logged in then it also shows the a different tab for Activities for the user.</td>
+        </tr>
+        <tr>
+          <td><h4>User Groups Page</h4></td>
+          <td class="type-info">The Groups page shows the Groups directory. If a user is logged in then it also shows the Groups joined by the user.</td>
+        </tr>
+        <tr>
+          <td><h4>Members Page</h4></td>
+          <td class="type-info">The Members page shows the Members directory, if friendships is enabled then it also showsn the friendship status for each user. If a user is logged in then it also shows the all Friends tab.</td>
+        </tr>
+        <tr>
+          <td><h4>Course Page</h4></td>
+          <td class="type-info">The Course page shows the Course directory. If a user is logged in then it also shows the Courses joined by the user. If the current logged in user is also an instructor then it also shoes the Courses taken by the Instructor. <code>Note: This page requires Vibe Course Module plugin.</code></td>
+        </tr>
+        <tr>
+          <td><h4>Registeration Page</h4></td>
+          <td class="type-info">The registeration page for the site. If Extended profile fields is enabled then this page also shows custom profile fields which can be created from the User->Profile fields section in WordPRess.</td>
+        </tr>
+        <tr>
+          <td><h4>Activation Page</h4></td>
+          <td class="type-info">The Activation page to confirm account creation. Once a user signsup on the site, the user is sent an activation link to confirm the account. Upon clicking the link the user account is created and the user sees the Activation page.</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>  
+  
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Privacy can be controlled for each of the above pages from the Vibe Options Panel -> BuddyPress and Course Manager section. So you can enable/disable viewership of each of the above pages from the options panel. For example: Site Activity can be enabled only for Instructors and Admins on the Site.
+  </p>
+
+<br />
+
+  <h2 id="buddypress-settings">BuddyPress Settings</h2>
+  <p>This section contains important settings for BuddyPress.</p>
+  <p> The default settings are just about right, however we recommend you to disable the toolbar for Logged out users because Site already has an inbuilt Login panel.</p>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-up8.png?resize=1033%2C676" title=""><img src="images/wplms-up8.png?w=1170" alt="wplms-installplugin1" width="60" height="39"></a><a href="images/wplms-up9.png?resize=1038%2C681" title=""><img src="images/wplms-up9.png?w=1170" alt="wplms-installplugin2" width="60" height="39"></a><a href="images/wplms-up10.png?resize=1038%2C681" title=""><img src="images/wplms-up10.png?w=1170" alt="wplms-up" width="60" height="39"></a></div>
+  </div>
+  <br />
+  <h2 id="buddypress-profile">BuddyPress Profile Fields</h2>
+  <p>You can create your own profile fields for users in BuddyPress. To enable this you must have the Extended Profile component enabled in the BuddyPress.</p>
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">The custom fields section can be located in the WP Admin -> Users -> Profile Fields</p>
+  <p> You can create any number of fields in this section, these fields are shown in the BuddyPress Registeration form</p>
+  <p>These Fields can also be clubbed into groups, each section appears on the registeration page and can be expanded to see the details. Check the <a href="http://vibethemes.com/envato/wplms/register-in-wplms/">registeration page</a> in the demo.</p>
+
+  <h6>WPLMS provides an option to show custom profile field data along with a Members name.</h6>
+  <p>The Student Field shows the data filled in the field for all the Students.</p>
+  <p>The Instructor Field shows the data filled in the field for all the Instructor.</p>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-profile1.png?resize=1033%2C676" title=""><img src="images/wplms-profile1.png?w=1170" alt="wplms-installplugin1" width="60" height="39"></a><a href="images/wplms-profile2.png?resize=1038%2C681" title=""><img src="images/wplms-profile2.png?w=1170" alt="wplms-installplugin2" width="60" height="39"></a><a href="images/wplms-profile3.png?resize=1038%2C681" title=""><img src="images/wplms-profile3.png?w=1170" alt="wplms-installplugin2" width="60" height="39"></a></div>
+  </div>
+
+  <h2 id="buddy-video">Video Tutorial</h2>
+
+<a href="http://quick.as/jrdphdlw">Watch this tutorial on Quickcast</a>
+<div class="fitvids">
+ <iframe name='quickcast' src='http://quick.as/embed/jrdphdlw' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.60'></script>
+</div>
+
+</div>
+
+
+
+
+<!-- Code
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="woocommerce" class="page-header">WooCommerce</h1>
+<h5>WPLMS is deep integrated with WooCommerce and comes with inbuilt customization for WooCommerce. </h5>
+<h5>Each WooCommerce product can be connected to unlimited Courses.</h5>
+<h5>Each WooCommerce product can be a Standard One time Buy Product or A Subscription Product</h5>
+
+<h2 id="woo-general">General Settings</h2>
+  <ol>
+<li>Setup your base location, currency &amp; allowed countries.</li>
+<li>Disable Guest Checkout. Since WPLMS triggers various functions for integrated subscriptions, guest checkout is not supported in the theme.</li>
+<li>Disable Allow registration on checkout page. For WPLMS subscriptions to work properly, a user must be pre registered before purchasing a product.</li>
+<li>Disabled Allow registration on my account page. This feature is in direct contradiction with BuddyPress, since we use BuddyPress account &amp; profile pages.</li>
+<li>Disabled register using email address for username. Does not apply as we strip down registeration functionality from WooCommerce.</li>
+<li>Disable WooCommerce CSS. WPLMS Theme comes with inbuilt support for WooCommerce, this feature of WooCommerce conflicts with theme styling.</li>
+</ol>
+<div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-woo9.png?resize=950%2C624" title="WooCommerce Settings"><img src="images/wplms-woo9.png?w=1170" alt="wplms-woo9" width="60" height="39"></a><a href="images/wplms-woo10.png?resize=932%2C580" title="WooCommerce Settings"><img src="images/wplms-woo10.png?w=1170" alt="wplms-woo10" width="60" height="37"></a></div>
+  </div>
+<h2 id="woo-catalog">Catalog Settings</h2>
+<p>There are few important recommended settings in the catalog section in WooCommerce.</p>
+<p>Locate the Image options setting at the bottom of the page and disable the hard crop form images, this will allow your images to appear in their natural aspect ratio.</p>
+<div class="bs-callout bs-callout-info">
+    <h4>Screenshot Walkthrough</h4>
+      <div class="gallery normal"><a href="images/wplms-woo14.png?resize=950%2C624" title="WooCommerce Settings"><img src="images/wplms-woo14.png?w=1170" alt="wplms-woo9" width="60" height="39"></a></div>
+  </div>
+
+  <h2 id="woo-pages">Page Setup</h2>
+  <p>WooCommerce page setup is important for handling subscriptions methods built in the theme.</p>
+  <ol>
+<li>Setup pages for WooCommerce. You can use the inbuilt WooCommerce pages for every thing apart from following pages.</li>
+<li>Checkout Page should have Checkout Page Template. This is the step checkout template inbuilt in the theme. Make sure the checkout page has the shortcode&nbsp;<em><strong>[woocommerce_checkout]</strong> </em>in the content.</li>
+<li>Thanks page should have the Thankyou Page template. This is the inbuilt Page template which acts as a replacement for WooCommerce Thank you page. Since this functionality is inbuilt in the theme, you can <em><strong>remove the&nbsp;[woocommerce_thankyou]</strong></em> shortcode from thank you page content.&nbsp;This page shows the subscription status when an order is complete.</li>
+</ol>
+<div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-woo11.png?resize=842%2C512" title="WooCommerce Pages"><img src="images/wplms-woo11.png?w=1170" alt="wplms-woo11" width="60" height="36"></a><a href="images/wplms-woo13.png?resize=1085%2C557" title="WooCommerce Checkout Page"><img src="images/wplms-woo13.png?w=1170" alt="wplms-woo13" width="60" height="31"></a><a href="images/wplms-woo12.png?resize=1088%2C555" title="WooCommerce Thank you page"><img src="images/wplms-woo12.png?w=1170" alt="wplms-woo12" width="60" height="31"></a></div>
+</div>
+
+<h2 id="woo-video">Video Tutorial</h2>
+
+<p>The tutorial is for latest WooCommerce version 2.1.2, there has been a lot of changes in the settings of WooCommerce. Please watch this video if you're using the latest WooCommerce version.</p>
+<a href="http://quick.as/7k9mfn2d">Watch this on Quickcast</a>
+<div class="fitvids">
+<iframe name='quickcast' src='http://quick.as/embed/7k9mfn2d' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/1.29'></script>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Tables
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="important" class="page-header">Important WordPress Setttings</h1>
+  <p>Apart from above settings there are few important and required settings for functioning of WPLMS</p>
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">These settings are located in the WordPress Admin -> Settings section.</p>
+
+  <h2 id="general">General Settings</h2>
+  <p>If you want the WPLMS site to be an open site where students can register then you can enable Memberships and set the detault role for registered members as Student</p>
+
+  <div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-g1.png?resize=842%2C512" title="General Settings"><img src="images/wplms-g1.png?w=1170" alt="wplms-woo11" width="60" height="36"></a></div>
+  </div>
+
+
+  <h2 id="discussion">Discussion Settings</h2>
+  <p>This is an important setting and a limitation of the WPLMS theme. </p>
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Disable comment moderation.</p>
+  <p>This is required because all the answers to a Quiz questions are saved as comments for the question. So, moderation blocks the answers to be saved as answers for the Quiz.</p>
+  <div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-g2.png?resize=842%2C512" title="Comment Moderation"><img src="images/wplms-g2.png?w=1170" alt="wplms-woo11" width="60" height="36"></a></div>
+  </div>
+
+  <h2 id="permalinks">Permalinks</h2>
+  <p>The most important setting required for WPLMS and BuddyPress to function</p>
+   <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">Set Permalinks to Post Name</p>
+
+   <div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-g3.png?resize=842%2C512" title="Permalinks Settings"><img src="images/wplms-g3.png?w=1170" alt="wplms-woo11" width="60" height="36"></a></div>
+  </div>
+</div>
+
+
+<!-- Forms
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="importing" class="page-header">Importing Data</h1>
+  <p>If you're not importing sample data you can move over to the next part in documentation.</p>
+  <p>This is last and final part of theme setup. In this part we import data from various sources and setup the site. It is to be noted that the importer only imports WordPress media. So BuddyPress media isn't imported during this process.</p>
+  <h2 id="options-panel">Importing Options Panel</h2>
+  <p>To import the options panel, follow below steps:</p>
+
+  <ol>
+  <li>Go to WPLMS Options Panel (Vibe Options Panel) in WordPress Admin</li>
+  <li>Locate the Import/Export Tab</li>
+  <li>Click on Import form URL</li>
+  <li>Paste below URL in the URL field and click import.</li>
+  </ol>
+  <p style="padding:8px 20px;display:inline-block; margin:10px 0;background:#f2da91;font-weight:600;width:100%;border-radius:2px;">http://vibethemes.com/envato/wplms?feed=vibeopts-wplms&secret=7eaa2c4ef2b146be88a45601f18f66bf</p>
+  
+  <div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-op1.png?resize=842%2C512" title="Import Panel"><img src="images/wplms-op1.png?w=1170" alt="wplms-woo11" width="60" height="36"></a><a href="images/wplms-op2.png?resize=842%2C512" title="Paste URL"><img src="images/wplms-op2.png?w=1170" alt="wplms-woo11" width="60" height="36"></a></div>
+  </div>
+
+  <h2 id="uploading-file">Uploading Sample Data File</h2>
+  <p>The WPLMS download package contains a file called <strong>sampledata.zip</strong>. This file includes the sampledata file. Follow below steps to upload and import sample data :</p>
+  <ol>
+    <li>Unzip sampledata.zip to get the sampledata.xml file</li>
+    <li>Go to WP Admin -> Tools -> Import</li>
+    <li>Select import from WordPress, Install the WordPress importer plugin if necessary</li>
+    <li>Upload the File sampledata.xml</li>
+    <li>Create a new user for each user in sample data</li>
+    <li>Check Download & Import Media if you want to import images and other sample media from the Demo [ This takes a lot more time as it downloads all the images and videos from the Demo site to your current installation.]</li>
+    <li>Click Import data</li>
+  </ol>
+
+   <div class="bs-callout bs-callout-info">
+  <h4>Screenshot Walkthrough</h4>
+    <div class="gallery normal"><a href="images/wplms-inst1.png?resize=842%2C512" title="Importing"><img src="images/wplms-inst1.png?w=1170" alt="wplms-woo11" width="60" height="36"></a><a href="images/wplms-inst2.png?resize=842%2C512" title="Importing"><img src="images/wplms-inst2.png?w=1170" alt="wplms-woo11" width="60" height="36"></a><a href="images/wplms-inst3.png?resize=842%2C512" title="Importing Sample Data"><img src="images/wplms-inst3.png?w=1170" alt="wplms-woo11" width="60" height="36"></a></div>
+  </div>
+
+
+  <h2 id="settingup">Setting Up installed Data</h2>
+  <p>Once the sample data has imported, you need to do few setings to make your demo site look similar to the WPLMS DEMO. </p>
+  <ol>
+    <li>Setup Menus, Go to WP Admin -> Appearance -> Menus and assign relevant menus to relevant location</li>
+    <li>Set the home page. Go to WP Admin -> Settings -> General and assign a static page as your home page and select Home as your home page.</li>
+    <li>Import the demo slider from the <a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/">WPLMS forums</a></li>
+  </ol>
+
+   
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="video" class="page-header">Setup Video Tutorial</h1>
+  <p><a href="http://www.youtube.com/watch?v=Z1F04Q6AGsU">Watch on Youtube</a></p>
+  <div class="fitvids">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/Z1F04Q6AGsU" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <h4>ALTERNATE WAY TO INSTALL THE THEME</h4>
+  <div class="fitvids">
+  <iframe src="http://www.screenr.com/embed/KoNN" width="650" height="396" frameborder="0"></iframe>
+  </div>
+</div>  
+        </div>
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+              <li>
+                <a href="#pre-setup">Pre-Setup</a>
+                <ul class="nav">
+                  <li><a href="#modifying-config">Modifying Config</a></li>
+                  <li><a href="#preparing">Preparing Files</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#upload">Upload &amp; Activate</a>
+                <ul class="nav">
+                  <li><a href="#upload-theme">Uploading Theme</a></li>
+                  <li><a href="#activate-theme">Activating Theme</a></li>
+                  <li><a href="#installing-plugins">Installing Plugins</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#buddypress">BuddyPress</a>
+                <ul class="nav">
+                  <li><a href="#buddypress-components">BuddyPress Components</a></li>
+                  <li><a href="#buddypress-pages">BuddyPress Pages</a></li>
+                  <li><a href="#buddypress-settings">BuddyPress Settings</a></li>
+                  <li><a href="#buddypress-profile">BuddyPress Profile Fields</a></li>
+                  <li><a href="#buddy-video">Video Tutorial</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#woocommerce">WooCommerce</a>
+                <ul class="nav">
+                  <li><a href="#woo-general">General Settings</a></li>
+                  <li><a href="#woo-catalog">Catalog</a></li>
+                  <li><a href="#woo-pages">Pages</a></li>
+                  <li><a href="#woo-video">Video Tutorial</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#important">Important Settings</a>
+                <ul class="nav">
+                  <li><a href="#general">General settings</a></li>
+                  <li><a href="#discussion">Discussion Settings</a></li>
+                  <li><a href="#permalinks">Permalinks</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#importing">Importing Data</a>
+                <ul class="nav">
+                  <li><a href="#options-panel">Importing Options Panel</a></li>
+                  <li><a href="#uploading-file">Uploading File</a></li>
+                  <li><a href="#settingup">Setting Up</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#video">Video Tutorial</a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-social">
+  <ul class="bs-social-buttons">
+    
+    <li class="follow-btn">
+      <a href="https://twitter.com/vibethemes" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @vibethemes</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://vibethemes.com/envato/wplms" data-count="horizontal" data-via="vibethemes" data-related="mdo:WPLMS by VibeThemes">Tweet</a>
+    </li>
+  </ul>
+</div>
+
+
+   
+    <ul class="footer-links muted">
+      <li>Currently v 1.0</li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/">Support</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/7309-issue-log">Issue Log</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/7310-feature-requests">Feature Requests</a></li>
+      <li>&middot;</li>
+      <li><a href="http://vibethemes.com/forums/forum/wordpress-html-css/wordpress-themes/wplms/tips-tricks-docs">Tips &amp; Tricks</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
+
+  </body>
+</html>
